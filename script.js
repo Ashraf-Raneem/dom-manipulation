@@ -10,5 +10,29 @@ function addText (event){
     div.appendChild(p);
 }
 
+/* Task 2b */
 
+/* //Method one
+var x = document.getElementsByTagName('BODY')[0]; 
+function changeBgRed (event) {
+    x.style.backgroundColor = "red"; 
+}
+
+function changeBgGreen (event) {
+    x.style.backgroundColor = "green"; 
+}
+*/
+
+//Method 2
+function changeBg(event){
+    document.body.style.background = event.target.innerText.toLowerCase();
+}
+
+/* Task 2c */ 
+function Redirect(event) {
+    window.location.href= "https://www.google.com/";
+}
+function Redirect2(event){
+    document.open("https://www.google.com/","blank")
+}
 /* Task 4 using jQuery */
