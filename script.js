@@ -36,3 +36,22 @@ function Redirect2(event){
     document.open("https://www.google.com/","blank")
 }
 /* Task 4 using jQuery */
+//Task 4a 
+$('#button').click(function(event){
+    let para = $('<p>').text("Hello world"); 
+    $('#task4a').append(para);
+})
+
+//task 4b
+$(".bgButton").click(function(event){
+    $("body").css('background-color', event.target.innerText.toLowerCase())
+})
+
+//task 4c 
+$('#addBtn').click(function(event){
+    $input1 = $('#input1').val();
+    $input2 = $('#input2').val(); 
+    $result = parseInt($input1)+parseInt($input2); 
+    let span = $('<span>').text($result); 
+    $('#resultNumber').append(span);
+})
